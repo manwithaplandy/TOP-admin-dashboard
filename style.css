@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
