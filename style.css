@@ -14,6 +14,12 @@
     width: clamp(200px, 20vw, 260px);
 }
 
+.searchbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
 .sidebar-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -32,7 +38,7 @@
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 3fr;
     grid-template-rows: 1fr 1fr;
 }
 
@@ -43,4 +49,10 @@
 
 #dash-img {
     width: max(15px, 2rem);
+}
+
+.buttons {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
 }
