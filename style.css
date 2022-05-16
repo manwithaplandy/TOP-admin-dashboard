@@ -11,14 +11,21 @@
     flex-direction: column;
     gap: 5vh;
     grid-row: 1 / -1;
+    width: clamp(200px, 20vw, 260px);
 }
 
 .sidebar-section {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     padding-left: 1rem;
     padding-right: rem;
+}
+
+.sidebar-section > a {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
 }
 
 .header {
