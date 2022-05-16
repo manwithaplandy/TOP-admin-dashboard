@@ -6,25 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>TOP Admin Dashboard</title>
 </head>
 <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="logo">
-                DASHBOARD
+        <div class="sidebar bg-cyan-500 text-neutral-50 font-roboto">
+            <div class="sidebar-section pt-3 text-2xl font-bold">
+                <img src="images/view-dashboard.svg" alt="Dashboard" id="dash-img">
+                <a href="#">Dashboard</a>
             </div>
             <div class="sidebar-section">
+                <img src="images/home.svg" alt="home">
                 <a href="#">Home</a>
+                <img src="images/account-group.svg" alt="Profile">
                 <a href="#">Profile</a>
+                <img src="images/message-reply.svg" alt="Messages">
                 <a href="#">Messages</a>
+                <img src="images/clock-outline.svg" alt="History">
                 <a href="#">History</a>
+                <img src="images/checkbox-marked-circle-plus-outline.svg" alt="Tasks">
                 <a href="#">Tasks</a>
+                <img src="images/account-group.svg" alt="Communities">
                 <a href="#">Communities</a>
             </div>
             <div class="sidebar-section">
+                <img src="images/cog.svg" alt="Settings">
                 <a href="#">Settings</a>
+                <img src="images/comment-question.svg" alt="Support">
                 <a href="#">Support</a>
+                <img src="images/shield-check.svg" alt="Privacy">
                 <a href="#">Privacy</a>
             </div>
         </div>
@@ -35,9 +46,9 @@
             <div class="greeting">HI THERE ANDY</div>
             <div class="profile-button">ANDY MALVY</div>
             <div class="buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <button class="rounded-xl px-6 py-1 border-2 border-cyan-500 bg-cyan-500 text-cyan-50">New</button>
+                <button class="rounded-xl px-6 py-1 border-2 border-cyan-500 bg-cyan-500 text-cyan-50">Upload</button>
+                <button class="rounded-xl px-6 py-1 border-2 border-cyan-500 bg-cyan-500 text-cyan-50">Share</button>
             </div>
         </div>
         <div class="main">

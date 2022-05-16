@@ -3,20 +3,22 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    background-color: cyan;
     grid-row: 1 / -1;
 }
 
 .sidebar-section {
-    display: flex;
-    flex-direction: column;
-    background-color: sienna;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: rem;
 }
 
 .header {
@@ -25,10 +27,13 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: red;
 }
 
 .main {
     grid-column: 2/-1;
     grid-row: 2/-1;
+}
+
+#dash-img {
+    width: max(15px, 2rem);
 }
