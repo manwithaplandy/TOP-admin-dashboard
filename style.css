@@ -2,25 +2,30 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    min-height: 100vh;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
     gap: 5vh;
+    background-color: cyan;
+    grid-row: 1 / -1;
 }
 
 .sidebar-section {
     display: flex;
     flex-direction: column;
+    background-color: sienna;
 }
 
 .header {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: red;
 }
 
 .main {
