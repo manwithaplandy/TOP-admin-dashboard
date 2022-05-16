@@ -53,6 +53,27 @@
 
 .buttons {
     display: grid;
-    place-items: center;
+    justify-items: center;
+    align-items: end;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.profile-button {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.profile-button > img {
+    width: min(50px, 5vw);
+    place-self: center;
+}
+
+.greeting {
+    grid-template-columns: 1fr auto auto 1fr;
+}
+
+.profile-small {
+    width: clamp(20px, 4vw, 50px);
 }
