@@ -45,6 +45,9 @@
 .main {
     grid-column: 2/-1;
     grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
 }
 
 #dash-img {
@@ -76,4 +79,23 @@
 
 .profile-small {
     width: clamp(20px, 4vw, 50px);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.project-title {
+    grid-column: 1 / -1;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.main-sidebar {
+    display: grid;
 }
