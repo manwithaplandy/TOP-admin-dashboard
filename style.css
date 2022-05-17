@@ -48,6 +48,7 @@
     display: grid;
     grid-template-columns: 2.5fr minmax(265px, 1fr);
     gap: 1.5rem;
+    max-height: 100vh;
 }
 
 #dash-img {
@@ -85,6 +86,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
+    overflow: auto;
 }
 
 .project-title {
@@ -103,7 +105,7 @@
     padding-right: 10px;
     border-left: solid 10px orange;
     padding-left: 10px;
-    height: 242px;
+    height: min(242px, 20vh);
 }
 
 .project-icons {
