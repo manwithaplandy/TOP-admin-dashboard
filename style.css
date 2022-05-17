@@ -46,8 +46,8 @@
     grid-column: 2/-1;
     grid-row: 2/-1;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 2.5fr minmax(265px, 1fr);
+    gap: 1.5rem;
 }
 
 #dash-img {
@@ -98,4 +98,18 @@
 
 .main-sidebar {
     display: grid;
+    grid-template-rows: 1fr 1fr;
 }
+
+.trending-card {
+    display: grid;
+    height: 90%;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+
