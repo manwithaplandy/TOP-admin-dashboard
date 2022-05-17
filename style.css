@@ -97,8 +97,27 @@
 }
 
 .card {
-    width: clamp(250px, 20rem, 330px);
+    display: grid;
+    grid-template-rows: 1fr auto 20px;
+    padding-right: 10px;
+    border-left: solid 10px orange;
+    padding-left: 10px;
 }
+
+.project-icons {
+    grid-row-start: -3;
+    display: flex;
+    justify-content: flex-end;
+    gap: max(15px, 3vw);
+    padding-right: 10px;
+}
+
+.main-project {
+    grid-row-start: 1;
+    padding-left: min(10px, 5vw);
+    padding-top: min(40px, 5vw);
+}
+
 
 .main-sidebar {
     display: grid;
@@ -117,14 +136,17 @@
 }
 
 .announce-card {
-    height: min(400px, 90%);
+    height: min(320px, 90%);
     display: grid;
     grid-template-rows: repeat(3, 1fr);
 }
 
-.announcement {
+.announce-text {
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;;
+}
+
+.announcement {
+    display: grid;
+    border-bottom: 1px solid grey;
+    gap: 0;
 }
