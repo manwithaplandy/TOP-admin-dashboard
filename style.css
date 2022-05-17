@@ -94,6 +94,7 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
 }
 
 .card {
@@ -102,6 +103,7 @@
     padding-right: 10px;
     border-left: solid 10px orange;
     padding-left: 10px;
+    height: 242px;
 }
 
 .project-icons {
@@ -116,12 +118,20 @@
     grid-row-start: 1;
     padding-left: min(10px, 5vw);
     padding-top: min(40px, 5vw);
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    overflow: hidden;
+    padding-bottom: 0.5rem;
+}
+
+.main-project-content {
+    overflow: hidden;
 }
 
 
 .main-sidebar {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
 }
 
 .trending-card {
